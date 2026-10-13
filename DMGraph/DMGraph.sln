@@ -1,0 +1,50 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 10.00
+# Visual Studio 2008
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "DMGraph", "DMGraph.vcproj", "{EF6A15AE-E12C-42E0-93B7-90F6B5444212}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "DMGraphTest", "..\DMGraphTest\DMGraphTest.vcproj", "{43ABC8D2-A473-439A-BE1B-EEDE9D379DE0}"
+	ProjectSection(ProjectDependencies) = postProject
+		{EF6A15AE-E12C-42E0-93B7-90F6B5444212} = {EF6A15AE-E12C-42E0-93B7-90F6B5444212}
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SourceCodeControl) = preSolution
+		SccNumberOfProjects = 2
+		SccProjectUniqueName0 = DMGraph.vcproj
+		SccProjectName0 = \u0022$/RoCpp/DMGraph\u0022,\u0020QDDAAAAA
+		SccLocalPath0 = .
+		SccProvider0 = MSSCCI:Microsoft\u0020Visual\u0020SourceSafe
+		SccProjectUniqueName1 = ..\\DMGraphTest\\DMGraphTest.vcproj
+		SccProjectName1 = \u0022$/RoCpp/DMGraphTest\u0022,\u0020VFDAAAAA
+		SccLocalPath1 = ..\\DMGraphTest
+		SccProvider1 = MSSCCI:Microsoft\u0020Visual\u0020SourceSafe
+	EndGlobalSection
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Win32 = Debug|Win32
+		Release|Win32 = Release|Win32
+		Unicode Debug|Win32 = Unicode Debug|Win32
+		Unicode Release MinSize|Win32 = Unicode Release MinSize|Win32
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{EF6A15AE-E12C-42E0-93B7-90F6B5444212}.Debug|Win32.ActiveCfg = Unicode Debug|Win32
+		{EF6A15AE-E12C-42E0-93B7-90F6B5444212}.Debug|Win32.Build.0 = Unicode Debug|Win32
+		{EF6A15AE-E12C-42E0-93B7-90F6B5444212}.Release|Win32.ActiveCfg = Unicode Release MinSize|Win32
+		{EF6A15AE-E12C-42E0-93B7-90F6B5444212}.Release|Win32.Build.0 = Unicode Release MinSize|Win32
+		{EF6A15AE-E12C-42E0-93B7-90F6B5444212}.Unicode Debug|Win32.ActiveCfg = Unicode Debug|Win32
+		{EF6A15AE-E12C-42E0-93B7-90F6B5444212}.Unicode Debug|Win32.Build.0 = Unicode Debug|Win32
+		{EF6A15AE-E12C-42E0-93B7-90F6B5444212}.Unicode Release MinSize|Win32.ActiveCfg = Unicode Release MinSize|Win32
+		{EF6A15AE-E12C-42E0-93B7-90F6B5444212}.Unicode Release MinSize|Win32.Build.0 = Unicode Release MinSize|Win32
+		{43ABC8D2-A473-439A-BE1B-EEDE9D379DE0}.Debug|Win32.ActiveCfg = Debug|Win32
+		{43ABC8D2-A473-439A-BE1B-EEDE9D379DE0}.Debug|Win32.Build.0 = Debug|Win32
+		{43ABC8D2-A473-439A-BE1B-EEDE9D379DE0}.Release|Win32.ActiveCfg = Release|Win32
+		{43ABC8D2-A473-439A-BE1B-EEDE9D379DE0}.Release|Win32.Build.0 = Release|Win32
+		{43ABC8D2-A473-439A-BE1B-EEDE9D379DE0}.Unicode Debug|Win32.ActiveCfg = Debug|Win32
+		{43ABC8D2-A473-439A-BE1B-EEDE9D379DE0}.Unicode Debug|Win32.Build.0 = Debug|Win32
+		{43ABC8D2-A473-439A-BE1B-EEDE9D379DE0}.Unicode Release MinSize|Win32.ActiveCfg = Release|Win32
+		{43ABC8D2-A473-439A-BE1B-EEDE9D379DE0}.Unicode Release MinSize|Win32.Build.0 = Release|Win32
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

@@ -1,0 +1,72 @@
+<HTML>
+<HEAD>
+<TITLE>ATL 3.0 test page for object DM GraphCtrl</TITLE>
+<meta http-equiv="Content-Type" content="text/html; charset=windows-1252">
+<meta name=vs_defaultClientScript content="VBScript">
+<SCRIPT SRC="start.js"></SCRIPT>
+<SCRIPT SRC="link.js"></SCRIPT>
+<script id=clientEventHandlersVBS language=vbscript>
+<!--
+
+Sub BtnSin_onclick
+	On Error Resume Next
+	Dim dmGraphCtrl 
+	Set dmGraphCtrl = document.getElementById("DMGraphCtrl")
+	Dim idx : idx = dmGraphCtrl.Elements.Selected
+	If idx < 0 Then
+		MsgBox("Error: please create and select an element first." & vbCrLf & "(Double click to see porperty pages)")
+	Else
+		Dim selElement 
+		Set selElement = dmGraphCtrl.Elements.Item(idx)
+		Dim i
+		Dim x()
+		Dim y()
+		ReDim x(100)
+		ReDim y(100)
+		For i=0  To 100
+			x(i) = i/5
+			y(i) = Sin( x(i) )
+		Next
+		selElement.Plot x, y
+		dmGraphCtrl.AutoRange()
+	End If
+	If Err.number <> 0 Then
+		MsgBox Err.Description
+	End If
+End Sub
+
+Sub Clear_graph_onclick
+	On Error Resume Next
+	Dim dmGraphCtrl 
+	Set dmGraphCtrl = document.getElementById("DMGraphCtrl")
+	Call dmGraphCtrl.ClearGraph()
+	If Err.number <> 0 Then
+		MsgBox Err.Description
+	End If
+End Sub
+
+Sub Auto_range_onclick
+	On Error Resume Next
+	Dim dmGraphCtrl 
+	Set dmGraphCtrl = document.getElementById("DMGraphCtrl")
+	Call dmGraphCtrl.AutoRange()
+	If Err.number <> 0 Then
+		MsgBox Err.Description
+	End If
+End Sub
+
+-->
+</script>
+</HEAD>
+<BODY>
+<p>
+<OBJECT ID="DMGraphCtrl" CLASSID="CLSID:AAF89A51-7FC0-43B0-9F81-FFEFF6A8DB43" width=600  height=400 VIEWASTEXT></OBJECT>
+<p>&nbsp;
+ <input id=BtnSin value=sin type="button">
+</p>
+<p>
+ <input id=Clear_graph value=Clear type=button>&nbsp; 
+ <input style="Z-INDEX: 0" id=Auto_range value="Zoom to fit" type=button></p>
+ Right-click and select "View source" to see the VB script code which invokes the DM Graph control.
+</BODY>
+</HTML>

@@ -1,0 +1,70 @@
+<html><head>
+<title>DMGraphLib Component</title><meta http-equiv="Content-Type" content="text/html; charset=windows-1252">
+<SCRIPT SRC="start.js"></SCRIPT>
+<SCRIPT SRC="link.js"></SCRIPT>
+</head><body id="bodyID" class = "dtBODY">
+<div id="nsbanner">
+<div id="bannerrow1">
+<TABLE CLASS="bannerparthead" CELLSPACING=0>
+<TR ID="hdr">
+<TD CLASS="runninghead" nowrap>DMGraph ActiveX Control</TD>
+<TD CLASS="product" nowrap>&nbsp;</TD>
+</TR>
+</TABLE>
+</div>
+<div id="TitleRow">
+<H1 class="dtH1">DMGraphLib Component Interfaces</H1>
+</div></div>
+
+<DIV id="nstext" valign="bottom">
+
+<p>&nbsp;</p><b><font face="Arial" size="5" color="#000080">
+<p align=center>How to use this ActiveX control ?</font></b></P>
+<p>Each kind of client application has its own way to integrate an ActiveX control. An 
+application created with Microsoft Visual C++, Visual Basic, VB script/java 
+script in HTML pages,&nbsp;.NET&nbsp;applications, Office applications can 
+support the use of ActiveX controls. You can change&nbsp;control's properties 
+during design time or run time. This will affect how the control will plot the 
+data during runtime.
+ </p>
+<p>
+Two files are required to 
+use this control:</p>
+<ul>
+  <li>
+  <div>
+  
+  DMGraph.dll
+  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
+  The DM Graph control's code and 
+  data.
+ </div>
+  <li>
+  <div  
+  >
+  DMGraph.chm
+  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;The 
+  help file for this control.</div></li></ul>
+<p> This control needs to be registered in the system registry before use. This is a 
+self registering control. This means that to register the control in the system 
+registry you only need to have an application load the control and call the 
+control’s exported function DllRegisterServer. You can use the REGSVR32 utility 
+or have your setup program do this.
+</p>
+<p>
+ </p>
+<h3>How to use the REGSVR32 utility?
+ </h3>
+<p >
+Copy DMGraph.dll to your directory. Open a command prompt 
+(On Windows&nbsp;Vista and later you need to "Run as 
+Administrator").&nbsp;Change the directory to the one which 
+contains the DLL. Type:
+ </p>
+<p ><font face="Courier New">regsvr32 DMGraph.dll</font></p>
+<p >
+<br><font face="Courier New">regsvr32 /u 
+DMGraph.dll</font> (Unregister server) </p>
+<p>
+ &nbsp;</p>
+</DIV></body></html>

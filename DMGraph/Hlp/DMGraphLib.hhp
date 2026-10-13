@@ -1,0 +1,38 @@
+[OPTIONS]
+Compatibility=1.1 or later
+Compiled file=DMGraphLib.chm
+Contents file=F:\Marius\RoCpp\Graph\DMGraph\Hlp\TOC.hhc
+Default Window=DMGraphLib
+Default topic=html\welcometopic.htm
+Display compile progress=Yes
+Index file=Index.hhk
+Language=0x409 English (United States)
+Title=DMGraphLib Component Help
+
+[WINDOWS]
+DMGraphLib=,"TOC.hhc","Index.hhk","html\welcometopic.htm",,,"DMGraphLib Reference",,,0x42120,,0x300e,,,,,,,,0
+
+
+[FILES]
+html\start.js
+html\link.js
+html\tlbstyle.css
+html\gfx\download.gif
+html\gfx\email.gif
+html\gfx\filter.gif
+html\gfx\filter1a.gif
+html\gfx\filter1b.gif
+html\gfx\filter1c.gif
+html\gfx\requirements.gif
+html\gfx\requirements1a.gif
+html\gfx\requirements1b.gif
+html\gfx\requirements1c.gif
+html\gfx\seealso.gif
+html\gfx\seealso1a.gif
+html\gfx\seealso1b.gif
+html\gfx\seealso1c.gif
+html\gfx\tiny.gif
+html\gfx\logo.gif
+
+[INFOTYPES]
+

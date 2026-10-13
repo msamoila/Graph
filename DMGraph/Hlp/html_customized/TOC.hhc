@@ -1,0 +1,486 @@
+<!DOCTYPE HTML PUBLIC "-//IETF//DTD HTML//EN">
+<HTML>
+<HEAD>
+<meta name="GENERATOR" content="Microsoft&reg; HTML Help Workshop 4.1">
+<!-- Sitemap 1.0 -->
+</HEAD><BODY>
+<OBJECT type="text/site properties">
+	<param name="Foreground" value="0x80ff">
+	<param name="Window Styles" value="0x801225">
+</OBJECT>
+<UL>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="Introduction">
+		</OBJECT>
+	<UL>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="Welcome">
+			<param name="Local" value="html\welcometopic.htm">
+			</OBJECT>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="What is this">
+			<param name="Local" value="html\WhatIsThis.htm">
+			</OBJECT>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="Overview">
+			<param name="Local" value="html\DmGraph.htm">
+			</OBJECT>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="What is new">
+			<param name="Local" value="html\WhatIsNew.htm">
+			</OBJECT>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="How to use">
+			<param name="Local" value="html\HowToUse.htm">
+			</OBJECT>
+	</UL>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="DMGraphLib Reference">
+		<param name="Local" value="html\reference.htm">
+		</OBJECT>
+	<UL>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="Interfaces">
+			<param name="Local" value="html/interfaces/index.htm">
+			</OBJECT>
+		<UL>
+			<LI> <OBJECT type="text/sitemap">
+				<param name="Name" value="IDMGraphCtrl">
+				<param name="Local" value="html\interfaces\IDMGraphCtrl\index.htm">
+				</OBJECT>
+			<UL>
+				<LI> <OBJECT type="text/sitemap">
+					<param name="Name" value="IDMGraphCtrl::Enabled">
+					<param name="Local" value="html\interfaces\IDMGraphCtrl\Enabled.htm">
+					</OBJECT>
+				<LI> <OBJECT type="text/sitemap">
+					<param name="Name" value="IDMGraphCtrl::Caption">
+					<param name="Local" value="html\interfaces\IDMGraphCtrl\Caption.htm">
+					</OBJECT>
+				<LI> <OBJECT type="text/sitemap">
+					<param name="Name" value="IDMGraphCtrl::Appearance">
+					<param name="Local" value="html\interfaces\IDMGraphCtrl\Appearance.htm">
+					</OBJECT>
+				<LI> <OBJECT type="text/sitemap">
+					<param name="Name" value="IDMGraphCtrl::AxisColor">
+					<param name="Local" value="html\interfaces\IDMGraphCtrl\AxisColor.htm">
+					</OBJECT>
+				<LI> <OBJECT type="text/sitemap">
+					<param name="Name" value="IDMGraphCtrl::GridColor">
+					<param name="Local" value="html\interfaces\IDMGraphCtrl\GridColor.htm">
+					</OBJECT>
+				<LI> <OBJECT type="text/sitemap">
+					<param name="Name" value="IDMGraphCtrl::LabelColor">
+					<param name="Local" value="html\interfaces\IDMGraphCtrl\LabelColor.htm">
+					</OBJECT>
+				<LI> <OBJECT type="text/sitemap">
+					<param name="Name" value="IDMGraphCtrl::LabelFont">
+					<param name="Local" value="html\interfaces\IDMGraphCtrl\LabelFont.htm">
+					</OBJECT>
+				<LI> <OBJECT type="text/sitemap">
+					<param name="Name" value="IDMGraphCtrl::TickFont">
+					<param name="Local" value="html\interfaces\IDMGraphCtrl\TickFont.htm">
+					</OBJECT>
+				<LI> <OBJECT type="text/sitemap">
+					<param name="Name" value="IDMGraphCtrl::TitleFont">
+					<param name="Local" value="html\interfaces\IDMGraphCtrl\TitleFont.htm">
+					</OBJECT>
+				<LI> <OBJECT type="text/sitemap">
+					<param name="Name" value="IDMGraphCtrl::IdentFont">
+					<param name="Local" value="html\interfaces\IDMGraphCtrl\IdentFont.htm">
+					</OBJECT>
+				<LI> <OBJECT type="text/sitemap">
+					<param name="Name" value="IDMGraphCtrl::ElementIdentify">
+					<param name="Local" value="html\interfaces\IDMGraphCtrl\ElementIdentify.htm">
+					</OBJECT>
+				<LI> <OBJECT type="text/sitemap">
+					<param name="Name" value="IDMGraphCtrl::TrackMode">
+					<param name="Local" value="html\interfaces\IDMGraphCtrl\TrackMode.htm">
+					</OBJECT>
+				<LI> <OBJECT type="text/sitemap">
+					<param name="Name" value="IDMGraphCtrl::ControlFramePicture">
+					<param name="Local" value="html\interfaces\IDMGraphCtrl\ControlFramePicture.htm">
+					</OBJECT>
+				<LI> <OBJECT type="text/sitemap">
+					<param name="Name" value="IDMGraphCtrl::PlotAreaPicture">
+					<param name="Local" value="html\interfaces\IDMGraphCtrl\PlotAreaPicture.htm">
+					</OBJECT>
+				<LI> <OBJECT type="text/sitemap">
+					<param name="Name" value="IDMGraphCtrl::ControlFrameColor">
+					<param name="Local" value="html\interfaces\IDMGraphCtrl\ControlFrameColor.htm">
+					</OBJECT>
+				<LI> <OBJECT type="text/sitemap">
+					<param name="Name" value="IDMGraphCtrl::PlotAreaColor">
+					<param name="Local" value="html\interfaces\IDMGraphCtrl\PlotAreaColor.htm">
+					</OBJECT>
+				<LI> <OBJECT type="text/sitemap">
+					<param name="Name" value="IDMGraphCtrl::FrameStyle">
+					<param name="Local" value="html\interfaces\IDMGraphCtrl\FrameStyle.htm">
+					</OBJECT>
+				<LI> <OBJECT type="text/sitemap">
+					<param name="Name" value="IDMGraphCtrl::Annotations">
+					<param name="Local" value="html\interfaces\IDMGraphCtrl\Annotations.htm">
+					</OBJECT>
+				<LI> <OBJECT type="text/sitemap">
+					<param name="Name" value="IDMGraphCtrl::Elements">
+					<param name="Local" value="html\interfaces\IDMGraphCtrl\Elements.htm">
+					</OBJECT>
+				<LI> <OBJECT type="text/sitemap">
+					<param name="Name" value="IDMGraphCtrl::Cursors">
+					<param name="Local" value="html\interfaces\IDMGraphCtrl\Cursors.htm">
+					</OBJECT>
+				<LI> <OBJECT type="text/sitemap">
+					<param name="Name" value="IDMGraphCtrl::Axis">
+					<param name="Local" value="html\interfaces\IDMGraphCtrl\Axis.htm">
+					</OBJECT>
+				<LI> <OBJECT type="text/sitemap">
+					<param name="Name" value="IDMGraphCtrl::SetRange">
+					<param name="Local" value="html\interfaces\IDMGraphCtrl\SetRange.htm">
+					</OBJECT>
+				<LI> <OBJECT type="text/sitemap">
+					<param name="Name" value="IDMGraphCtrl::GetRange">
+					<param name="Local" value="html\interfaces\IDMGraphCtrl\GetRange.htm">
+					</OBJECT>
+				<LI> <OBJECT type="text/sitemap">
+					<param name="Name" value="IDMGraphCtrl::AutoRange">
+					<param name="Local" value="html\interfaces\IDMGraphCtrl\AutoRange.htm">
+					</OBJECT>
+				<LI> <OBJECT type="text/sitemap">
+					<param name="Name" value="IDMGraphCtrl::GetAutoRange">
+					<param name="Local" value="html\interfaces\IDMGraphCtrl\GetAutoRange.htm">
+					</OBJECT>
+				<LI> <OBJECT type="text/sitemap">
+					<param name="Name" value="IDMGraphCtrl::CopyToClipboard">
+					<param name="Local" value="html\interfaces\IDMGraphCtrl\CopyToClipboard.htm">
+					</OBJECT>
+				<LI> <OBJECT type="text/sitemap">
+					<param name="Name" value="IDMGraphCtrl::PrintGraph">
+					<param name="Local" value="html\interfaces\IDMGraphCtrl\PrintGraph.htm">
+					</OBJECT>
+				<LI> <OBJECT type="text/sitemap">
+					<param name="Name" value="IDMGraphCtrl::ClearGraph">
+					<param name="Local" value="html\interfaces\IDMGraphCtrl\ClearGraph.htm">
+					</OBJECT>
+				<LI> <OBJECT type="text/sitemap">
+					<param name="Name" value="IDMGraphCtrl::ShowProperties">
+					<param name="Local" value="html\interfaces\IDMGraphCtrl\ShowProperties.htm">
+					</OBJECT>
+				<LI> <OBJECT type="text/sitemap">
+					<param name="Name" value="IDMGraphCtrl::SaveAs">
+					<param name="Local" value="html\interfaces\IDMGraphCtrl\SaveAs.htm">
+					</OBJECT>
+				<LI> <OBJECT type="text/sitemap">
+					<param name="Name" value="IDMGraphCtrl::AboutBox">
+					<param name="Local" value="html\interfaces\IDMGraphCtrl\AboutBox.htm">
+					</OBJECT>
+			</UL>
+			<LI> <OBJECT type="text/sitemap">
+				<param name="Name" value="IDMGraphElement">
+				<param name="Local" value="html\interfaces\IDMGraphElement\index.htm">
+				</OBJECT>
+			<UL>
+				<LI> <OBJECT type="text/sitemap">
+					<param name="Name" value="IDMGraphElement::LineColor">
+					<param name="Local" value="html\interfaces\IDMGraphElement\LineColor.htm">
+					</OBJECT>
+				<LI> <OBJECT type="text/sitemap">
+					<param name="Name" value="IDMGraphElement::PointColor">
+					<param name="Local" value="html\interfaces\IDMGraphElement\PointColor.htm">
+					</OBJECT>
+				<LI> <OBJECT type="text/sitemap">
+					<param name="Name" value="IDMGraphElement::LineType">
+					<param name="Local" value="html\interfaces\IDMGraphElement\LineType.htm">
+					</OBJECT>
+				<LI> <OBJECT type="text/sitemap">
+					<param name="Name" value="IDMGraphElement::LineWidth">
+					<param name="Local" value="html\interfaces\IDMGraphElement\LineWidth.htm">
+					</OBJECT>
+				<LI> <OBJECT type="text/sitemap">
+					<param name="Name" value="IDMGraphElement::PointSymbol">
+					<param name="Local" value="html\interfaces\IDMGraphElement\PointSymbol.htm">
+					</OBJECT>
+				<LI> <OBJECT type="text/sitemap">
+					<param name="Name" value="IDMGraphElement::SolidPoint">
+					<param name="Local" value="html\interfaces\IDMGraphElement\SolidPoint.htm">
+					</OBJECT>
+				<LI> <OBJECT type="text/sitemap">
+					<param name="Name" value="IDMGraphElement::PointSize">
+					<param name="Local" value="html\interfaces\IDMGraphElement\PointSize.htm">
+					</OBJECT>
+				<LI> <OBJECT type="text/sitemap">
+					<param name="Name" value="IDMGraphElement::Show">
+					<param name="Local" value="html\interfaces\IDMGraphElement\Show.htm">
+					</OBJECT>
+				<LI> <OBJECT type="text/sitemap">
+					<param name="Name" value="IDMGraphElement::Name">
+					<param name="Local" value="html\interfaces\IDMGraphElement\Name.htm">
+					</OBJECT>
+				<LI> <OBJECT type="text/sitemap">
+					<param name="Name" value="IDMGraphElement::Count">
+					<param name="Local" value="html\interfaces\IDMGraphElement\Count.htm">
+					</OBJECT>
+				<LI> <OBJECT type="text/sitemap">
+					<param name="Name" value="IDMGraphElement::XValue">
+					<param name="Local" value="html\interfaces\IDMGraphElement\XValue.htm">
+					</OBJECT>
+				<LI> <OBJECT type="text/sitemap">
+					<param name="Name" value="IDMGraphElement::YValue">
+					<param name="Local" value="html\interfaces\IDMGraphElement\YValue.htm">
+					</OBJECT>
+				<LI> <OBJECT type="text/sitemap">
+					<param name="Name" value="IDMGraphElement::PlotXY">
+					<param name="Local" value="html\interfaces\IDMGraphElement\PlotXY.htm">
+					</OBJECT>
+				<LI> <OBJECT type="text/sitemap">
+					<param name="Name" value="IDMGraphElement::PlotY">
+					<param name="Local" value="html\interfaces\IDMGraphElement\PlotY.htm">
+					</OBJECT>
+				<LI> <OBJECT type="text/sitemap">
+					<param name="Name" value="IDMGraphElement::Plot">
+					<param name="Local" value="html\interfaces\IDMGraphElement\Plot.htm">
+					</OBJECT>
+			</UL>
+			<LI> <OBJECT type="text/sitemap">
+				<param name="Name" value="IDMGraphAnnotation">
+				<param name="Local" value="html\interfaces\IDMGraphAnnotation\index.htm">
+				</OBJECT>
+			<UL>
+				<LI> <OBJECT type="text/sitemap">
+					<param name="Name" value="IDMGraphAnnotation::LabelCaption">
+					<param name="Local" value="html\interfaces\IDMGraphAnnotation\LabelCaption.htm">
+					</OBJECT>
+				<LI> <OBJECT type="text/sitemap">
+					<param name="Name" value="IDMGraphAnnotation::LabelX">
+					<param name="Local" value="html\interfaces\IDMGraphAnnotation\LabelX.htm">
+					</OBJECT>
+				<LI> <OBJECT type="text/sitemap">
+					<param name="Name" value="IDMGraphAnnotation::LabelY">
+					<param name="Local" value="html\interfaces\IDMGraphAnnotation\LabelY.htm">
+					</OBJECT>
+				<LI> <OBJECT type="text/sitemap">
+					<param name="Name" value="IDMGraphAnnotation::LabelColor">
+					<param name="Local" value="html\interfaces\IDMGraphAnnotation\LabelColor.htm">
+					</OBJECT>
+				<LI> <OBJECT type="text/sitemap">
+					<param name="Name" value="IDMGraphAnnotation::LabelHorizontal">
+					<param name="Local" value="html\interfaces\IDMGraphAnnotation\LabelHorizontal.htm">
+					</OBJECT>
+				<LI> <OBJECT type="text/sitemap">
+					<param name="Name" value="IDMGraphAnnotation::Visible">
+					<param name="Local" value="html\interfaces\IDMGraphAnnotation\Visible.htm">
+					</OBJECT>
+				<LI> <OBJECT type="text/sitemap">
+					<param name="Name" value="IDMGraphAnnotation::LabelBkColor">
+					<param name="Local" value="html\interfaces\IDMGraphAnnotation\LabelBkColor.htm">
+					</OBJECT>
+			</UL>
+			<LI> <OBJECT type="text/sitemap">
+				<param name="Name" value="IDMGraphCursor">
+				<param name="Local" value="html\interfaces\IDMGraphCursor\index.htm">
+				</OBJECT>
+			<UL>
+				<LI> <OBJECT type="text/sitemap">
+					<param name="Name" value="IDMGraphCursor::Color">
+					<param name="Local" value="html\interfaces\IDMGraphCursor\Color.htm">
+					</OBJECT>
+				<LI> <OBJECT type="text/sitemap">
+					<param name="Name" value="IDMGraphCursor::X">
+					<param name="Local" value="html\interfaces\IDMGraphCursor\X.htm">
+					</OBJECT>
+				<LI> <OBJECT type="text/sitemap">
+					<param name="Name" value="IDMGraphCursor::Y">
+					<param name="Local" value="html\interfaces\IDMGraphCursor\Y.htm">
+					</OBJECT>
+				<LI> <OBJECT type="text/sitemap">
+					<param name="Name" value="IDMGraphCursor::Style">
+					<param name="Local" value="html\interfaces\IDMGraphCursor\Style.htm">
+					</OBJECT>
+				<LI> <OBJECT type="text/sitemap">
+					<param name="Name" value="IDMGraphCursor::Visible">
+					<param name="Local" value="html\interfaces\IDMGraphCursor\Visible.htm">
+					</OBJECT>
+				<LI> <OBJECT type="text/sitemap">
+					<param name="Name" value="IDMGraphCursor::Mode">
+					<param name="Local" value="html\interfaces\IDMGraphCursor\Mode.htm">
+					</OBJECT>
+				<LI> <OBJECT type="text/sitemap">
+					<param name="Name" value="IDMGraphCursor::Name">
+					<param name="Local" value="html\interfaces\IDMGraphCursor\Name.htm">
+					</OBJECT>
+			</UL>
+			<LI> <OBJECT type="text/sitemap">
+				<param name="Name" value="IDMGraphAxis">
+				<param name="Local" value="html\interfaces\IDMGraphAxis\index.htm">
+				</OBJECT>
+			<UL>
+				<LI> <OBJECT type="text/sitemap">
+					<param name="Name" value="IDMGraphAxis::GridNumber">
+					<param name="Local" value="html\interfaces\IDMGraphAxis\GridNumber.htm">
+					</OBJECT>
+				<LI> <OBJECT type="text/sitemap">
+					<param name="Name" value="IDMGraphAxis::Label">
+					<param name="Local" value="html\interfaces\IDMGraphAxis\Label.htm">
+					</OBJECT>
+				<LI> <OBJECT type="text/sitemap">
+					<param name="Name" value="IDMGraphAxis::Log">
+					<param name="Local" value="html\interfaces\IDMGraphAxis\Log.htm">
+					</OBJECT>
+				<LI> <OBJECT type="text/sitemap">
+					<param name="Name" value="IDMGraphAxis::Time">
+					<param name="Local" value="html\interfaces\IDMGraphAxis\Time.htm">
+					</OBJECT>
+				<LI> <OBJECT type="text/sitemap">
+					<param name="Name" value="IDMGraphAxis::Format">
+					<param name="Local" value="html\interfaces\IDMGraphAxis\Format.htm">
+					</OBJECT>
+				<LI> <OBJECT type="text/sitemap">
+					<param name="Name" value="IDMGraphAxis::ShowGrid">
+					<param name="Local" value="html\interfaces\IDMGraphAxis\ShowGrid.htm">
+					</OBJECT>
+			</UL>
+			<LI> <OBJECT type="text/sitemap">
+				<param name="Name" value="IDMGraphCollection">
+				<param name="Local" value="html\interfaces\IDMGraphCollection\index.htm">
+				</OBJECT>
+			<UL>
+				<LI> <OBJECT type="text/sitemap">
+					<param name="Name" value="IDMGraphCollection::Count">
+					<param name="Local" value="html\interfaces\IDMGraphCollection\Count.htm">
+					</OBJECT>
+				<LI> <OBJECT type="text/sitemap">
+					<param name="Name" value="IDMGraphCollection::Item">
+					<param name="Local" value="html\interfaces\IDMGraphCollection\Item.htm">
+					</OBJECT>
+				<LI> <OBJECT type="text/sitemap">
+					<param name="Name" value="IDMGraphCollection::Selected">
+					<param name="Local" value="html\interfaces\IDMGraphCollection\Selected.htm">
+					</OBJECT>
+				<LI> <OBJECT type="text/sitemap">
+					<param name="Name" value="IDMGraphCollection::Add">
+					<param name="Local" value="html\interfaces\IDMGraphCollection\Add.htm">
+					</OBJECT>
+				<LI> <OBJECT type="text/sitemap">
+					<param name="Name" value="IDMGraphCollection::Delete">
+					<param name="Local" value="html\interfaces\IDMGraphCollection\Delete.htm">
+					</OBJECT>
+			</UL>
+			<LI> <OBJECT type="text/sitemap">
+				<param name="Name" value="_IDMGraphCtrlEvents">
+				<param name="Local" value="html\interfaces\_IDMGraphCtrlEvents\index.htm">
+				</OBJECT>
+			<UL>
+				<LI> <OBJECT type="text/sitemap">
+					<param name="Name" value="_IDMGraphCtrlEvents::CursorPosition">
+					<param name="Local" value="html\interfaces\_IDMGraphCtrlEvents\CursorPosition.htm">
+					</OBJECT>
+				<LI> <OBJECT type="text/sitemap">
+					<param name="Name" value="_IDMGraphCtrlEvents::TrackModeChanged">
+					<param name="Local" value="html\interfaces\_IDMGraphCtrlEvents\TrackModeChanged.htm">
+					</OBJECT>
+				<LI> <OBJECT type="text/sitemap">
+					<param name="Name" value="_IDMGraphCtrlEvents::Click">
+					<param name="Local" value="html\interfaces\_IDMGraphCtrlEvents\Click.htm">
+					</OBJECT>
+			</UL>
+		</UL>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="Enumerated Types">
+			<param name="Local" value="html\enums\index.htm">
+			</OBJECT>
+		<UL>
+			<LI> <OBJECT type="text/sitemap">
+				<param name="Name" value="LineType">
+				<param name="Local" value="html\enums\LineType\index.htm">
+				</OBJECT>
+			<LI> <OBJECT type="text/sitemap">
+				<param name="Name" value="SymbolType">
+				<param name="Local" value="html\enums\SymbolType\index.htm">
+				</OBJECT>
+			<LI> <OBJECT type="text/sitemap">
+				<param name="Name" value="Crosshair">
+				<param name="Local" value="html\enums\Crosshair\index.htm">
+				</OBJECT>
+			<LI> <OBJECT type="text/sitemap">
+				<param name="Name" value="CursorMode">
+				<param name="Local" value="html\enums\CursorMode\index.htm">
+				</OBJECT>
+			<LI> <OBJECT type="text/sitemap">
+				<param name="Name" value="TrackModeState">
+				<param name="Local" value="html\enums\TrackModeState\index.htm">
+				</OBJECT>
+			<LI> <OBJECT type="text/sitemap">
+				<param name="Name" value="FrameStyle">
+				<param name="Local" value="html\enums\FrameStyle\index.htm">
+				</OBJECT>
+			<LI> <OBJECT type="text/sitemap">
+				<param name="Name" value="Orientation">
+				<param name="Local" value="html\enums\Orientation\index.htm">
+				</OBJECT>
+		</UL>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="Aliases">
+			<param name="Local" value="html\aliases\index.htm">
+			</OBJECT>
+		<UL>
+			<LI> <OBJECT type="text/sitemap">
+				<param name="Name" value="LineType">
+				<param name="Local" value="html\aliases\LineType.htm">
+				</OBJECT>
+			<LI> <OBJECT type="text/sitemap">
+				<param name="Name" value="SymbolType">
+				<param name="Local" value="html\aliases\SymbolType.htm">
+				</OBJECT>
+			<LI> <OBJECT type="text/sitemap">
+				<param name="Name" value="Crosshair">
+				<param name="Local" value="html\aliases\Crosshair.htm">
+				</OBJECT>
+			<LI> <OBJECT type="text/sitemap">
+				<param name="Name" value="CursorMode">
+				<param name="Local" value="html\aliases\CursorMode.htm">
+				</OBJECT>
+			<LI> <OBJECT type="text/sitemap">
+				<param name="Name" value="TrackModeState">
+				<param name="Local" value="html\aliases\TrackModeState.htm">
+				</OBJECT>
+			<LI> <OBJECT type="text/sitemap">
+				<param name="Name" value="FrameStyle">
+				<param name="Local" value="html\aliases\FrameStyle.htm">
+				</OBJECT>
+			<LI> <OBJECT type="text/sitemap">
+				<param name="Name" value="Orientation">
+				<param name="Local" value="html\aliases\Orientation.htm">
+				</OBJECT>
+		</UL>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="CoClasses">
+			<param name="Local" value="html/classes/index.htm">
+			</OBJECT>
+		<UL>
+			<LI> <OBJECT type="text/sitemap">
+				<param name="Name" value="DMGraphCtrl">
+				<param name="Local" value="html\classes\DMGraphCtrl\index.htm">
+				</OBJECT>
+			<LI> <OBJECT type="text/sitemap">
+				<param name="Name" value="ElementPropPage">
+				<param name="Local" value="html\classes\ElementPropPage\index.htm">
+				</OBJECT>
+			<LI> <OBJECT type="text/sitemap">
+				<param name="Name" value="AnnoPropPage">
+				<param name="Local" value="html\classes\AnnoPropPage\index.htm">
+				</OBJECT>
+			<LI> <OBJECT type="text/sitemap">
+				<param name="Name" value="CursorPropPage">
+				<param name="Local" value="html\classes\CursorPropPage\index.htm">
+				</OBJECT>
+			<LI> <OBJECT type="text/sitemap">
+				<param name="Name" value="FormatPropPage">
+				<param name="Local" value="html\classes\FormatPropPage\index.htm">
+				</OBJECT>
+			<LI> <OBJECT type="text/sitemap">
+				<param name="Name" value="DMGraphPropPage">
+				<param name="Local" value="html\classes\DMGraphPropPage\index.htm">
+				</OBJECT>
+		</UL>
+	</UL>
+</UL>
+</BODY></HTML>

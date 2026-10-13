@@ -1,0 +1,1676 @@
+TLB2HTML Project File v1.0
+Copyright (c) 2003. by Milos Tosic
+All Rights Reserved
+_____________________________________
+Color Template : C:\Program Files\Glista Graphics Group\TLB2HTML\pct\DMGraphLib.ct
+_____________________________________
+1101111101
+HRESULT        : S_OK
+Description    : (0x00000000) The standard return value used to communicate successful completion.
+HRESULT        : S_FALSE
+Description    : (0x00000001) An alternate success value, typically used to communicate successful, but non-standard completion. The precise meaning depends on the method or property in question.
+HRESULT        : E_UNEXPECTED
+Description    : (0x8000FFFF) Catastrophic failure error.
+HRESULT        : E_NOTIMPL
+Description    : (0x80004001) Not implemented error.
+HRESULT        : E_OUTOFMEMORY
+Description    : (0x8007000E) Out of memory error.
+HRESULT        : E_INVALIDARG
+Description    : (0x80070057) One or more arguments are not valid error.
+HRESULT        : E_NOINTERFACE
+Description    : (0x80004002) Interface not supported error.
+HRESULT        : E_POINTER
+Description    : (0x80004003) Pointer not valid error.
+HRESULT        : E_HANDLE
+Description    : (0x80070006) Handle not valid error.
+HRESULT        : E_ABORT
+Description    : (0x80004004) Operation aborted error.
+HRESULT        : E_FAIL
+Description    : (0x80004005) Unspecified error.
+HRESULT        : E_ACCESSDENIED
+Description    : (0x80070005) General access denied error.
+HRESULT        : MK_E_NOOBJECT
+Description    : (0x800401E5) The object identified by this moniker could not be found.
+HRESULT        : COMADMIN_E_ALREADYINSTALLED
+Description    : The object is already registered.
+HRESULT        : COMADMIN_E_APP_FILE_READFAIL
+Description    : Error occurred reading the application file.
+HRESULT        : COMADMIN_E_APP_FILE_VERSION
+Description    : Invalid version number in application file.
+HRESULT        : COMADMIN_E_APP_FILE_WRITEFAIL
+Description    : Error occurred writing to the application file.
+HRESULT        : COMADMIN_E_APPDIRNOTFOUND
+Description    : Application install directory was not found.
+HRESULT        : COMQC_E_APPLICATION_NOT_QUEUED
+Description    : Only COM+ applications marked "queued" can be created using the "queue" moniker.
+HRESULT        : COMADMIN_E_APPLICATIONEXISTS
+Description    : The application is already installed.
+HRESULT        : COMADMIN_E_APPLID_MATCHES_CLSID
+Description    : A CLSID with the same GUID as the new application ID is already installed on this machine.
+HRESULT        : COMADMIN_E_APP_NOT_RUNNING
+Description    : The specified application is not currently running.
+HRESULT        : COMADMIN_E_AUTHENTICATIONLEVEL
+Description    : Unable to set required authentication level for update request.
+HRESULT        : COMADMIN_E_BADPATH
+Description    : The file path is invalid.
+HRESULT        : COMADMIN_E_BADREGISTRYLIBID
+Description    : The registered type library ID is invalid.
+HRESULT        : COMADMIN_E_BADREGISTRYPROGID
+Description    : The component's ProgID is missing or corrupt.
+HRESULT        : COMADMIN_E_CAN_NOT_EXPORT_APP_PROXY
+Description    : The application proxy is not exportable.
+HRESULT        : COMADMIN_E_CAN_NOT_START_APP
+Description    : Failed to start application because it is either a library application or an application proxy.
+HRESULT        : COMADMIN_E_CAN_NOT_EXPORT_SYS_APP
+Description    : The system application is not exportable.
+HRESULT        : COMADMIN_E_CANT_SUBSCRIBE_TO_COMPONENT
+Description    : The user cannot subscribe to this component because the component may have been imported.
+HRESULT        : COMADMIN_E_CANTCOPYFILE
+Description    : An error occurred copying the file.
+HRESULT        : COMADMIN_E_CLSIDORIIDMISMATCH
+Description    : Application file CLSIDs or IIDs do not match corresponding DLLs.
+HRESULT        : COMADMIN_E_COMP_MOVE_BAD_DEST
+Description    : The component move failed because the destination application no longer exists.
+HRESULT        : COMADMIN_E_COMP_MOVE_LOCKED
+Description    : The component move was disallowed because the source or destination application either is a system application or is currently locked against changes.
+HRESULT        : COMADMIN_E_COMPFILE_BADTLB
+Description    : The type library could not be loaded.
+HRESULT        : COMADMIN_E_COMPFILE_CLASSNOTAVAIL
+Description    : The DLL does not support the components listed in the type library.
+HRESULT        : COMADMIN_E_COMPFILE_DOESNOTEXIST
+Description    : This file does not exist.
+HRESULT        : COMADMIN_E_COMPFILE_GETCLASSOBJ
+Description    : The GetClassObject method failed in the DLL.
+HRESULT        : COMADMIN_E_COMPFILE_LOADDLLFAIL
+Description    : The DLL could not be loaded.
+HRESULT        : COMADMIN_E_COMPFILE_NOREGISTRAR
+Description    : The component registrar referenced in this file is not available.
+HRESULT        : COMADMIN_E_COMPFILE_NOTINSTALLABLE
+Description    : The file does not contain components or component information.
+HRESULT        : COMADMIN_E_COREQCOMPINSTALLED
+Description    : A component in the same DLL is already installed.
+HRESULT        : COMADMIN_E_DLLLOADFAILED
+Description    : The DLL could not be loaded.
+HRESULT        : COMADMIN_E_DLLREGISTERSERVER
+Description    : The DllRegisterServer function failed when the component was installed.
+HRESULT        : COMADMIN_E_EVENTCLASS_CANT_BE_SUBSCRIBER
+Description    : An event class cannot be configured as a subscriber component. When an attempt is made to create a subscription with an event class as a subscriber, this error is returned.
+HRESULT        : COMADMIN_E_INVALIDUSERIDS
+Description    : One or more users in the application file are not valid.
+HRESULT        : COMADMIN_E_KEYMISSING
+Description    : The object was not found in the catalog.
+HRESULT        : COMADMIN_E_LIB_APP_PROXY_INCOMPATIBLE
+Description    : Library applications and application proxies are incompatible. This error is returned when an attempt is made to export an application proxy and the application's activation property is a library. 
+HRESULT        : COMADMIN_E_NOREGISTRYCLSID
+Description    : The component's CLSID is missing or corrupt.
+HRESULT        : COMADMIN_E_NOSERVERSHARE
+Description    : No server file share is available.
+HRESULT        : COMADMIN_E_NOTCHANGEABLE
+Description    : Changes to this object and its sub-objects have been disabled.
+HRESULT        : COMADMIN_E_NOTDELETEABLE
+Description    : The delete function has been disabled for this object.
+HRESULT        : COMADMIN_E_NOTINREGISTRY
+Description    : Object was not found in registry.
+HRESULT        : COMADMIN_E_NOUSER
+Description    : One or more users are not valid.
+HRESULT        : COMADMIN_E_OBJECT_DOES_NOT_EXIST
+Description    : One of the specified objects cannot be found.
+HRESULT        : COMADMIN_E_OBJECT_PARENT_MISSING
+Description    : One of the objects being inserted or updated does not belong to a valid parent collection.
+HRESULT        : COMADMIN_E_OBJECTERRORS
+Description    : Errors occurred accessing one or more objects. For more information, see the ErrorInfo collection.
+HRESULT        : COMADMIN_E_OBJECTEXISTS
+Description    : The object you are attempting to add or rename already exists.
+HRESULT        : COMADMIN_E_OBJECTINVALID
+Description    : One or more of the object's properties are missing or invalid.
+HRESULT        : COMADMIN_E_OBJECTNOTPOOLABLE
+Description    : This object is cannot be pooled.
+HRESULT        : COMADMIN_E_PROPERTYSAVEFAILED
+Description    : One or more property settings are either invalid or in conflict with each other.
+HRESULT        : COMADMIN_E_PROPERTY_OVERFLOW
+Description    : The property value is too large.
+HRESULT        : COMADMIN_E_REGFILE_CORRUPT
+Description    : The registration file is corrupt.
+HRESULT        : COMADMIN_E_REGISTERTLB
+Description    : The system was unable to register the type library.
+HRESULT        : COMADMIN_E_REGISTRARFAILED
+Description    : Errors occurred while in the component registrar.
+HRESULT        : COMADMIN_E_REMOTEINTERFACE
+Description    : Interface information is either missing or changed.
+HRESULT        : COMADMIN_E_REQUIRES_DIFFERENT_PLATFORM
+Description    : This operation is not enabled on this platform
+HRESULT        : COMADMIN_E_ROLE_DOES_NOT_EXIST
+Description    : A role assigned to a component, interface, or method does not exist in the application.
+HRESULT        : COMADMIN_E_ROLEEXISTS
+Description    : The role already exists.
+HRESULT        : COMADMIN_E_SERVICENOTINSTALLED
+Description    : The service is not installed.
+HRESULT        : COMADMIN_E_SESSION
+Description    : The server catalog version is not supported.
+HRESULT        : COMADMIN_S_SOMEALREADYPAUSED
+Description    : One or more of the specified application processes were already paused.
+HRESULT        : COMADMIN_S_SOMEALREADYRUNNING
+Description    : One or more of the specified application processes were already running.
+HRESULT        : COMADMIN_E_START_APP_NEEDS_COMPONENTS
+Description    : To start the application, you must have components in an application.
+HRESULT        : COMADMIN_E_SVCAPP_NOT_POOLABLE_OR_RECYCLABLE
+Description    : The COM+ applications running as an NT service may not be marked as pooled or recycled.
+HRESULT        : COMADMIN_E_SYSTEMAPP
+Description    : This operation cannot be performed on the system application.
+HRESULT        : COMADMIN_E_USER_IN_SET
+Description    : One or more users are already assigned to a local partition set.
+HRESULT        : COMADMIN_E_USERPASSWDNOTVALID
+Description    : The identity or password set on the application is not valid.
+_____________________________________
+TLB Source     : ..\DMGraph.tlb
+CHM Dest       : ..\hlp
+HTML Help Title: DMGraphLib Component Help
+TLB Shortdesc  : 
+TLB Remarks    : 
+Component Ref. : DMGraphLib Reference
+_____________________________________
+TB1:DMGraphLib Component
+TB2:Custom text
+TB3:DMGraphLib Component v1.0 : 
+TB4:December 2011
+TB5:Contact Author of DMGraphLib !
+TB6:
+TB7:Enter e-mail
+TB8:Enter Web-site URL
+_____________________________________
+Interfaces : 7
+Structures : 0
+Enums      : 7
+Unions     : 0
+Aliases    : 7
+CoClasses  : 6
+_____________________________________
+Interface : IDMGraphElement
+Groups    : 1
+Group     : (default)
+Methods   : 15
+Short     : IDMGraphElement Interface
+Remarks   : 
+ExampleCC : 
+ExampleVB : 
+ExampleCS : 
+ExampleJS : 
+___________
+Name      : LineColor
+Params    : 1
+Short     : property LineColor
+Remarks   : 
+Return    : 
+Group     : (default)
+ExampleCC : 
+ExampleVB : 
+ExampleCS : 
+ExampleJS : 
+___________
+Name      : pVal
+Short     : 
+Remarks   : 
+___________
+Name      : PointColor
+Params    : 1
+Short     : property PointColor
+Remarks   : 
+Return    : 
+Group     : (default)
+ExampleCC : 
+ExampleVB : 
+ExampleCS : 
+ExampleJS : 
+___________
+Name      : pVal
+Short     : 
+Remarks   : 
+___________
+Name      : LineType
+Params    : 1
+Short     : property Linetype
+Remarks   : 
+Return    : 
+Group     : (default)
+ExampleCC : 
+ExampleVB : 
+ExampleCS : 
+ExampleJS : 
+___________
+Name      : pVal
+Short     : 
+Remarks   : 
+___________
+Name      : LineWidth
+Params    : 1
+Short     : property Line Width
+Remarks   : 
+Return    : 
+Group     : (default)
+ExampleCC : 
+ExampleVB : 
+ExampleCS : 
+ExampleJS : 
+___________
+Name      : pVal
+Short     : 
+Remarks   : 
+___________
+Name      : PointSymbol
+Params    : 1
+Short     : property PointSymbol
+Remarks   : 
+Return    : 
+Group     : (default)
+ExampleCC : 
+ExampleVB : 
+ExampleCS : 
+ExampleJS : 
+___________
+Name      : pVal
+Short     : 
+Remarks   : 
+___________
+Name      : SolidPoint
+Params    : 1
+Short     : property SolidPoint
+Remarks   : 
+Return    : 
+Group     : (default)
+ExampleCC : 
+ExampleVB : 
+ExampleCS : 
+ExampleJS : 
+___________
+Name      : pVal
+Short     : 
+Remarks   : 
+___________
+Name      : PointSize
+Params    : 1
+Short     : property Point Size
+Remarks   : 
+Return    : 
+Group     : (default)
+ExampleCC : 
+ExampleVB : 
+ExampleCS : 
+ExampleJS : 
+___________
+Name      : pVal
+Short     : 
+Remarks   : 
+___________
+Name      : Show
+Params    : 1
+Short     : property Show
+Remarks   : 
+Return    : 
+Group     : (default)
+ExampleCC : 
+ExampleVB : 
+ExampleCS : 
+ExampleJS : 
+___________
+Name      : pVal
+Short     : 
+Remarks   : 
+___________
+Name      : Name
+Params    : 1
+Short     : property Name
+Remarks   : 
+Return    : 
+Group     : (default)
+ExampleCC : 
+ExampleVB : 
+ExampleCS : 
+ExampleJS : 
+___________
+Name      : pVal
+Short     : 
+Remarks   : 
+___________
+Name      : Count
+Params    : 1
+Short     : property number of points
+Remarks   : 
+Return    : The number of points plotted by this graph element.
+Group     : (default)
+ExampleCC : 
+ExampleVB : 
+ExampleCS : 
+ExampleJS : 
+___________
+Name      : pVal
+Short     : 
+Remarks   : 
+___________
+Name      : XValue
+Params    : 2
+Short     : property XValue
+Remarks   : 
+Return    : 
+Group     : (default)
+ExampleCC : 
+ExampleVB : 
+ExampleCS : 
+ExampleJS : 
+___________
+Name      : index
+Short     : 
+Remarks   : 
+___________
+Name      : pVal
+Short     : 
+Remarks   : 
+___________
+Name      : YValue
+Params    : 2
+Short     : property YValue
+Remarks   : 
+Return    : 
+Group     : (default)
+ExampleCC : 
+ExampleVB : 
+ExampleCS : 
+ExampleJS : 
+___________
+Name      : index
+Short     : 
+Remarks   : 
+___________
+Name      : pVal
+Short     : 
+Remarks   : 
+___________
+Name      : PlotXY
+Params    : 2
+Short     : Appends a new point to the  point's collection.
+Remarks   : Adding points does not adjust the plotting area. If the new point falls outside boundaries then the <A  href="..\IDMGraphCtrl\SetRange.htm">SetRange</A> or <A  href="..\IDMGraphCtrl\SetRange.htm">Autorange</> methods must be invoked.
+Return    : 
+Group     : (default)
+ExampleCC : 
+ExampleVB : 
+ExampleCS : 
+ExampleJS : 
+___________
+Name      : X
+Short     : 
+Remarks   : 
+___________
+Name      : Y
+Short     : 
+Remarks   : 
+___________
+Name      : PlotY
+Params    : 1
+Short     : Appends a new point to the point's collection.
+Remarks   : X value is computed using the point collection size (for first added point X is zero, then one etc.).\r\n<P>\r\nAdding points does not adjust the plotting area. If the new point falls outside boundaries then the <A  href="..\IDMGraphCtrl\SetRange.htm">SetRange</A> or <A  href="..\IDMGraphCtrl\SetRange.htm">Autorange</> methods must be invoked.
+Return    : 
+Group     : (default)
+ExampleCC : 
+ExampleVB : 
+ExampleCS : 
+ExampleJS : 
+___________
+Name      : Y
+Short     : 
+Remarks   : 
+___________
+Name      : Plot
+Params    : 2
+Short     : Replaces all existing points with new ones then plots them.
+Remarks   : Replacing all existing points with new ones does not adjust the plotting area. If the new points fall outside boundaries then the <A  href="..\IDMGraphCtrl\SetRange.htm">SetRange</A> or <A  href="..\IDMGraphCtrl\SetRange.htm">Autorange</> methods must be invoked.\r\n<P>\r\nThe type for both parameters is VARIANT. This VARIANT must contain a unidimensional SAFEARRAY. The array elements must be numbers. The following types are accepted for elements (there is an attempt to convert to double): 
+Return    : 
+Group     : (default)
+ExampleCC : 
+ExampleVB : 
+ExampleCS : 
+ExampleJS : 
+___________
+Name      : newXVals
+Short     : 
+Remarks   : 
+___________
+Name      : newYVals
+Short     : 
+Remarks   : 
+_____________________________________
+Interface : IDMGraphAnnotation
+Groups    : 1
+Group     : (default)
+Methods   : 7
+Short     : IDMGraphAnnotation Interface
+Remarks   : 
+ExampleCC : 
+ExampleVB : 
+ExampleCS : 
+ExampleJS : 
+___________
+Name      : LabelCaption
+Params    : 1
+Short     : property LabelCaption
+Remarks   : 
+Return    : 
+Group     : (default)
+ExampleCC : 
+ExampleVB : 
+ExampleCS : 
+ExampleJS : 
+___________
+Name      : pVal
+Short     : 
+Remarks   : 
+___________
+Name      : LabelX
+Params    : 1
+Short     : property LabelX
+Remarks   : 
+Return    : 
+Group     : (default)
+ExampleCC : 
+ExampleVB : 
+ExampleCS : 
+ExampleJS : 
+___________
+Name      : pVal
+Short     : 
+Remarks   : 
+___________
+Name      : LabelY
+Params    : 1
+Short     : property LabelY
+Remarks   : 
+Return    : 
+Group     : (default)
+ExampleCC : 
+ExampleVB : 
+ExampleCS : 
+ExampleJS : 
+___________
+Name      : pVal
+Short     : 
+Remarks   : 
+___________
+Name      : LabelColor
+Params    : 1
+Short     : property LabelColor
+Remarks   : 
+Return    : 
+Group     : (default)
+ExampleCC : 
+ExampleVB : 
+ExampleCS : 
+ExampleJS : 
+___________
+Name      : pVal
+Short     : 
+Remarks   : 
+___________
+Name      : LabelHorizontal
+Params    : 1
+Short     : property LabelHorizontal
+Remarks   : 
+Return    : 
+Group     : (default)
+ExampleCC : 
+ExampleVB : 
+ExampleCS : 
+ExampleJS : 
+___________
+Name      : pVal
+Short     : 
+Remarks   : 
+___________
+Name      : Visible
+Params    : 1
+Short     : property Visible
+Remarks   : 
+Return    : 
+Group     : (default)
+ExampleCC : 
+ExampleVB : 
+ExampleCS : 
+ExampleJS : 
+___________
+Name      : pVal
+Short     : 
+Remarks   : 
+___________
+Name      : LabelBkColor
+Params    : 1
+Short     : property LabelBkColor
+Remarks   : 
+Return    : 
+Group     : (default)
+ExampleCC : 
+ExampleVB : 
+ExampleCS : 
+ExampleJS : 
+___________
+Name      : pVal
+Short     : 
+Remarks   : 
+_____________________________________
+Interface : IDMGraphCursor
+Groups    : 1
+Group     : (default)
+Methods   : 7
+Short     : IDMGraphCursor Interface
+Remarks   : 
+ExampleCC : 
+ExampleVB : 
+ExampleCS : 
+ExampleJS : 
+___________
+Name      : Color
+Params    : 1
+Short     : property Color
+Remarks   : 
+Return    : 
+Group     : (default)
+ExampleCC : 
+ExampleVB : 
+ExampleCS : 
+ExampleJS : 
+___________
+Name      : pVal
+Short     : 
+Remarks   : 
+___________
+Name      : X
+Params    : 1
+Short     : property X
+Remarks   : 
+Return    : 
+Group     : (default)
+ExampleCC : 
+ExampleVB : 
+ExampleCS : 
+ExampleJS : 
+___________
+Name      : pVal
+Short     : 
+Remarks   : 
+___________
+Name      : Y
+Params    : 1
+Short     : property Y
+Remarks   : 
+Return    : 
+Group     : (default)
+ExampleCC : 
+ExampleVB : 
+ExampleCS : 
+ExampleJS : 
+___________
+Name      : pVal
+Short     : 
+Remarks   : 
+___________
+Name      : Style
+Params    : 1
+Short     : property Style
+Remarks   : 
+Return    : 
+Group     : (default)
+ExampleCC : 
+ExampleVB : 
+ExampleCS : 
+ExampleJS : 
+___________
+Name      : pVal
+Short     : 
+Remarks   : 
+___________
+Name      : Visible
+Params    : 1
+Short     : property Visible
+Remarks   : 
+Return    : 
+Group     : (default)
+ExampleCC : 
+ExampleVB : 
+ExampleCS : 
+ExampleJS : 
+___________
+Name      : pVal
+Short     : 
+Remarks   : 
+___________
+Name      : Mode
+Params    : 1
+Short     : property Mode
+Remarks   : 
+Return    : 
+Group     : (default)
+ExampleCC : 
+ExampleVB : 
+ExampleCS : 
+ExampleJS : 
+___________
+Name      : pVal
+Short     : 
+Remarks   : 
+___________
+Name      : Name
+Params    : 1
+Short     : property Name
+Remarks   : 
+Return    : 
+Group     : (default)
+ExampleCC : 
+ExampleVB : 
+ExampleCS : 
+ExampleJS : 
+___________
+Name      : pVal
+Short     : 
+Remarks   : 
+_____________________________________
+Interface : IDMGraphAxis
+Groups    : 1
+Group     : (default)
+Methods   : 6
+Short     : IDMGraphAxis Interface
+Remarks   : 
+ExampleCC : 
+ExampleVB : 
+ExampleCS : 
+ExampleJS : 
+___________
+Name      : GridNumber
+Params    : 1
+Short     : property GridNumber
+Remarks   : 
+Return    : 
+Group     : (default)
+ExampleCC : 
+ExampleVB : 
+ExampleCS : 
+ExampleJS : 
+___________
+Name      : pVal
+Short     : 
+Remarks   : 
+___________
+Name      : Label
+Params    : 1
+Short     : property Label
+Remarks   : 
+Return    : 
+Group     : (default)
+ExampleCC : 
+ExampleVB : 
+ExampleCS : 
+ExampleJS : 
+___________
+Name      : pVal
+Short     : 
+Remarks   : 
+___________
+Name      : Log
+Params    : 1
+Short     : TRUE if this axis is in logarithmic scale
+Remarks   : 
+Return    : 
+Group     : (default)
+ExampleCC : 
+ExampleVB : 
+ExampleCS : 
+ExampleJS : 
+___________
+Name      : pVal
+Short     : 
+Remarks   : 
+___________
+Name      : Time
+Params    : 1
+Short     : TRUE if this axis needs to display date/time
+Remarks   : 
+Return    : 
+Group     : (default)
+ExampleCC : 
+ExampleVB : 
+ExampleCS : 
+ExampleJS : 
+___________
+Name      : pVal
+Short     : 
+Remarks   : 
+___________
+Name      : Format
+Params    : 1
+Short     : property Format
+Remarks   : 
+Return    : 
+Group     : (default)
+ExampleCC : 
+ExampleVB : 
+ExampleCS : 
+ExampleJS : 
+___________
+Name      : pVal
+Short     : 
+Remarks   : 
+___________
+Name      : ShowGrid
+Params    : 1
+Short     : property ShowGrid (horizontal lines for Y axis and vertical lines for X axis)
+Remarks   : 
+Return    : 
+Group     : (default)
+ExampleCC : 
+ExampleVB : 
+ExampleCS : 
+ExampleJS : 
+___________
+Name      : pVal
+Short     : 
+Remarks   : 
+_____________________________________
+Interface : IDMGraphCollection
+Groups    : 1
+Group     : (default)
+Methods   : 5
+Short     : IDMGraphCollection Interface
+Remarks   : 
+ExampleCC : 
+ExampleVB : 
+ExampleCS : 
+ExampleJS : 
+___________
+Name      : Count
+Params    : 1
+Short     : property Count
+Remarks   : 
+Return    : 
+Group     : (default)
+ExampleCC : 
+ExampleVB : 
+ExampleCS : 
+ExampleJS : 
+___________
+Name      : pVal
+Short     : 
+Remarks   : 
+___________
+Name      : Item
+Params    : 2
+Short     : property Item
+Remarks   : 
+Return    : 
+Group     : (default)
+ExampleCC : 
+ExampleVB : 
+ExampleCS : 
+ExampleJS : 
+___________
+Name      : index
+Short     : 
+Remarks   : 
+___________
+Name      : pVal
+Short     : 
+Remarks   : 
+___________
+Name      : Selected
+Params    : 1
+Short     : Gets the index of selected Item
+Remarks   : 
+Return    : 
+Group     : (default)
+ExampleCC : 
+ExampleVB : 
+ExampleCS : 
+ExampleJS : 
+___________
+Name      : pVal
+Short     : 
+Remarks   : 
+___________
+Name      : Add
+Params    : 1
+Short     : Creates a new item and adds it to the end
+Remarks   : 
+Return    : 
+Group     : (default)
+ExampleCC : 
+ExampleVB : 
+ExampleCS : 
+ExampleJS : 
+___________
+Name      : pVal
+Short     : 
+Remarks   : 
+___________
+Name      : Delete
+Params    : 1
+Short     : Deletes an existing item at specified index
+Remarks   : 
+Return    : 
+Group     : (default)
+ExampleCC : 
+ExampleVB : 
+ExampleCS : 
+ExampleJS : 
+___________
+Name      : index
+Short     : 
+Remarks   : 
+_____________________________________
+Interface : IDMGraphCtrl
+Groups    : 1
+Group     : (default)
+Methods   : 31
+Short     : IDMGraphCtrl Interface
+Remarks   : This interface is exposed by <A  href="..\..\classes\DMGraphCtrl\index.htm">DMGraphCtrl</A> object.
+ExampleCC : 
+ExampleVB : 
+ExampleCS : 
+ExampleJS : 
+___________
+Name      : Enabled
+Params    : 1
+Short     : 
+Remarks   : 
+Return    : 
+Group     : (default)
+ExampleCC : 
+ExampleVB : 
+ExampleCS : 
+ExampleJS : 
+___________
+Name      : pbool
+Short     : 
+Remarks   : 
+___________
+Name      : Caption
+Params    : 1
+Short     : The graph title displayed on center-top.
+Remarks   : 
+Return    : 
+Group     : (default)
+ExampleCC : 
+ExampleVB : 
+ExampleCS : 
+ExampleJS : 
+___________
+Name      : pstrCaption
+Short     : 
+Remarks   : 
+___________
+Name      : Appearance
+Params    : 1
+Short     : 
+Remarks   : 
+Return    : 
+Group     : (default)
+ExampleCC : 
+ExampleVB : 
+ExampleCS : 
+ExampleJS : 
+___________
+Name      : pappearance
+Short     : 
+Remarks   : 
+___________
+Name      : AxisColor
+Params    : 1
+Short     : The Axis color
+Remarks   : 
+Return    : 
+Group     : (default)
+ExampleCC : 
+ExampleVB : 
+ExampleCS : 
+ExampleJS : 
+___________
+Name      : pVal
+Short     : 
+Remarks   : 
+___________
+Name      : GridColor
+Params    : 1
+Short     : The Grid color
+Remarks   : 
+Return    : 
+Group     : (default)
+ExampleCC : 
+ExampleVB : 
+ExampleCS : 
+ExampleJS : 
+___________
+Name      : pVal
+Short     : 
+Remarks   : 
+___________
+Name      : LabelColor
+Params    : 1
+Short     : property LabelColor
+Remarks   : The color used for graph title and axis labels.
+Return    : 
+Group     : (default)
+ExampleCC : 
+ExampleVB : 
+ExampleCS : 
+ExampleJS : 
+___________
+Name      : pVal
+Short     : 
+Remarks   : 
+___________
+Name      : LabelFont
+Params    : 1
+Short     : property LabelFont
+Remarks   : The font used for axis labels.
+Return    : 
+Group     : (default)
+ExampleCC : 
+ExampleVB : 
+ExampleCS : 
+ExampleJS : 
+___________
+Name      : pVal
+Short     : 
+Remarks   : 
+___________
+Name      : TickFont
+Params    : 1
+Short     : property TickFont
+Remarks   : 
+Return    : 
+Group     : (default)
+ExampleCC : 
+ExampleVB : 
+ExampleCS : 
+ExampleJS : 
+___________
+Name      : pVal
+Short     : 
+Remarks   : 
+___________
+Name      : TitleFont
+Params    : 1
+Short     : property TitleFont
+Remarks   : The font used for graph title.
+Return    : 
+Group     : (default)
+ExampleCC : 
+ExampleVB : 
+ExampleCS : 
+ExampleJS : 
+___________
+Name      : pVal
+Short     : 
+Remarks   : 
+___________
+Name      : IdentFont
+Params    : 1
+Short     : property IdentFont
+Remarks   : 
+Return    : 
+Group     : (default)
+ExampleCC : 
+ExampleVB : 
+ExampleCS : 
+ExampleJS : 
+___________
+Name      : pVal
+Short     : 
+Remarks   : 
+___________
+Name      : ElementIdentify
+Params    : 1
+Short     : property ElementIdentify
+Remarks   : Decides if the Element name is displayed or not.
+Return    : 
+Group     : (default)
+ExampleCC : 
+ExampleVB : 
+ExampleCS : 
+ExampleJS : 
+___________
+Name      : pVal
+Short     : 
+Remarks   : 
+___________
+Name      : TrackMode
+Params    : 1
+Short     : property TrackMode
+Remarks   : Determines the behavior when user clicks left mouse button and then drags the mouse.
+Return    : 
+Group     : (default)
+ExampleCC : 
+ExampleVB : 
+ExampleCS : 
+ExampleJS : 
+___________
+Name      : pVal
+Short     : 
+Remarks   : 
+___________
+Name      : ControlFramePicture
+Params    : 1
+Short     : property ControlFramePicture
+Remarks   : 
+Return    : 
+Group     : (default)
+ExampleCC : 
+ExampleVB : 
+ExampleCS : 
+ExampleJS : 
+___________
+Name      : pVal
+Short     : 
+Remarks   : 
+___________
+Name      : PlotAreaPicture
+Params    : 1
+Short     : property PlotAreaPicture
+Remarks   : 
+Return    : 
+Group     : (default)
+ExampleCC : 
+ExampleVB : 
+ExampleCS : 
+ExampleJS : 
+___________
+Name      : pVal
+Short     : 
+Remarks   : 
+___________
+Name      : ControlFrameColor
+Params    : 1
+Short     : property ControlFrameColor
+Remarks   : 
+Return    : 
+Group     : (default)
+ExampleCC : 
+ExampleVB : 
+ExampleCS : 
+ExampleJS : 
+___________
+Name      : pVal
+Short     : 
+Remarks   : 
+___________
+Name      : PlotAreaColor
+Params    : 1
+Short     : property PlotAreaColor
+Remarks   : 
+Return    : 
+Group     : (default)
+ExampleCC : 
+ExampleVB : 
+ExampleCS : 
+ExampleJS : 
+___________
+Name      : pVal
+Short     : 
+Remarks   : 
+___________
+Name      : FrameStyle
+Params    : 1
+Short     : property FrameStyle
+Remarks   : 
+Return    : 
+Group     : (default)
+ExampleCC : 
+ExampleVB : 
+ExampleCS : 
+ExampleJS : 
+___________
+Name      : pVal
+Short     : 
+Remarks   : 
+___________
+Name      : Annotations
+Params    : 1
+Short     : property Annotations
+Remarks   : One annotation is an object which displays a piece of text on the graph area.
+Return    : The  collection contains <A  href="..\IDMGraphAnnotation\index.htm">IDMGraphAnnotation</A> interfaces.
+Group     : (default)
+ExampleCC : 
+ExampleVB : 
+ExampleCS : 
+ExampleJS : 
+___________
+Name      : pVal
+Short     : 
+Remarks   : 
+___________
+Name      : Elements
+Params    : 1
+Short     : property Elements
+Remarks   : One element is a series of points which needs to be plotted.  Depending on style lines may be drawn between these points.
+Return    : The  collection contains <A  href="..\IDMGraphElement\index.htm">IDMGraphElement</A> interfaces.
+Group     : (default)
+ExampleCC : 
+ExampleVB : 
+ExampleCS : 
+ExampleJS : 
+___________
+Name      : pVal
+Short     : 
+Remarks   : 
+___________
+Name      : Cursors
+Params    : 1
+Short     : property Cursors
+Remarks   : Depends on type it can be a straight line parallel with X axis or with Y axis or combination of both lines (X and Y).
+Return    : The  collection contains <A  href="..\IDMGraphCursor\index.htm">IDMGraphCursor</A> interfaces.
+Group     : (default)
+ExampleCC : 
+ExampleVB : 
+ExampleCS : 
+ExampleJS : 
+___________
+Name      : pVal
+Short     : 
+Remarks   : 
+___________
+Name      : Axis
+Params    : 2
+Short     : property Asis
+Remarks   : Collection with two <A  href="..\IDMGraphAxis\index.htm">axes</A>: one horizontal X axis and other vertical Y axis.
+Return    : 
+Group     : (default)
+ExampleCC : 
+ExampleVB : 
+ExampleCS : 
+ExampleJS : 
+___________
+Name      : eOrientation
+Short     : 
+Remarks   : 
+___________
+Name      : pVal
+Short     : 
+Remarks   : 
+___________
+Name      : SetRange
+Params    : 4
+Short     : method SetRange
+Remarks   : 
+Return    : 
+Group     : (default)
+ExampleCC : 
+ExampleVB : 
+ExampleCS : 
+ExampleJS : 
+___________
+Name      : xmin
+Short     : 
+Remarks   : 
+___________
+Name      : xmax
+Short     : 
+Remarks   : 
+___________
+Name      : ymin
+Short     : 
+Remarks   : 
+___________
+Name      : ymax
+Short     : 
+Remarks   : 
+___________
+Name      : GetRange
+Params    : 4
+Short     : method GetRange
+Remarks   : 
+Return    : 
+Group     : (default)
+ExampleCC : 
+ExampleVB : 
+ExampleCS : 
+ExampleJS : 
+___________
+Name      : xmin
+Short     : 
+Remarks   : 
+___________
+Name      : xmax
+Short     : 
+Remarks   : 
+___________
+Name      : ymin
+Short     : 
+Remarks   : 
+___________
+Name      : ymax
+Short     : 
+Remarks   : 
+___________
+Name      : AutoRange
+Params    : 0
+Short     : AutoRange. It sets the min/max x/y range based on existing data (zoom to fit).
+Remarks   : 
+Return    : 
+Group     : (default)
+ExampleCC : 
+ExampleVB : 
+ExampleCS : 
+ExampleJS : 
+___________
+Name      : GetAutoRange
+Params    : 4
+Short     : get Auto Range
+Remarks   : 
+Return    : 
+Group     : (default)
+ExampleCC : 
+ExampleVB : 
+ExampleCS : 
+ExampleJS : 
+___________
+Name      : xmin
+Short     : 
+Remarks   : 
+___________
+Name      : xmax
+Short     : 
+Remarks   : 
+___________
+Name      : ymin
+Short     : 
+Remarks   : 
+___________
+Name      : ymax
+Short     : 
+Remarks   : 
+___________
+Name      : CopyToClipboard
+Params    : 0
+Short     : method CopyToClipboard
+Remarks   : 
+Return    : 
+Group     : (default)
+ExampleCC : 
+ExampleVB : 
+ExampleCS : 
+ExampleJS : 
+___________
+Name      : PrintGraph
+Params    : 0
+Short     : method PrintGraph
+Remarks   : 
+Return    : 
+Group     : (default)
+ExampleCC : 
+ExampleVB : 
+ExampleCS : 
+ExampleJS : 
+___________
+Name      : ClearGraph
+Params    : 0
+Short     : method ClearGraph
+Remarks   : Deletes all <A  href="..\IDMGraphElement\index.htm">elements</A>, <A  href="..\IDMGraphAnnotation\index.htm">annotations</A>, <A  href="..\IDMGraphCursor\index.htm">cursors</A> and initialize all properties with default values.
+Return    : 
+Group     : (default)
+ExampleCC : 
+ExampleVB : 
+ExampleCS : 
+ExampleJS : 
+___________
+Name      : ShowProperties
+Params    : 0
+Short     : method ShowProperties
+Remarks   : 
+Return    : 
+Group     : (default)
+ExampleCC : 
+ExampleVB : 
+ExampleCS : 
+ExampleJS : 
+___________
+Name      : SaveAs
+Params    : 1
+Short     : method SaveAs
+Remarks   : 
+Return    : 
+Group     : (default)
+ExampleCC : 
+ExampleVB : 
+ExampleCS : 
+ExampleJS : 
+___________
+Name      : szFilename
+Short     : 
+Remarks   : 
+___________
+Name      : AboutBox
+Params    : 0
+Short     : Displays the About box.
+Remarks   : 
+Return    : 
+Group     : (default)
+ExampleCC : 
+ExampleVB : 
+ExampleCS : 
+ExampleJS : 
+_____________________________________
+Interface : _IDMGraphCtrlEvents
+Groups    : 1
+Group     : (default)
+Methods   : 3
+Short     : _IDMGraphCtrlEvents Interface
+Remarks   : 
+ExampleCC : 
+ExampleVB : 
+ExampleCS : 
+ExampleJS : 
+___________
+Name      : CursorPosition
+Params    : 2
+Short     : 
+Remarks   : 
+Return    : 
+Group     : (default)
+ExampleCC : 
+ExampleVB : 
+ExampleCS : 
+ExampleJS : 
+___________
+Name      : X
+Short     : 
+Remarks   : 
+___________
+Name      : Y
+Short     : 
+Remarks   : 
+___________
+Name      : TrackModeChanged
+Params    : 1
+Short     : 
+Remarks   : 
+Return    : 
+Group     : (default)
+ExampleCC : 
+ExampleVB : 
+ExampleCS : 
+ExampleJS : 
+___________
+Name      : lNewState
+Short     : 
+Remarks   : 
+___________
+Name      : Click
+Params    : 0
+Short     : 
+Remarks   : 
+Return    : 
+Group     : (default)
+ExampleCC : 
+ExampleVB : 
+ExampleCS : 
+ExampleJS : 
+_____________________________________
+Enum      : LineType
+Constants : 10
+Short     : Line style constants
+Remarks   : 
+___________
+Name      : Solid
+Short     : Solid
+Remarks   : 
+___________
+Name      : Dash
+Short     : Dash
+Remarks   : 
+___________
+Name      : Dot
+Short     : Dot
+Remarks   : 
+___________
+Name      : DashDot
+Short     : Dash Dot
+Remarks   : 
+___________
+Name      : DashDotDot
+Short     : Dash Dot Dot
+Remarks   : 
+___________
+Name      : Null
+Short     : None (no lines)
+Remarks   : 
+___________
+Name      : XYStep
+Short     : XY Step
+Remarks   : 
+___________
+Name      : YXStep
+Short     : YX Step
+Remarks   : 
+___________
+Name      : Bars
+Short     : Bars
+Remarks   : 
+___________
+Name      : Stick
+Short     : Stick
+Remarks   : 
+_____________________________________
+Enum      : SymbolType
+Constants : 9
+Short     : Symbol style constants used to draw element's points.
+Remarks   : 
+___________
+Name      : Nosym
+Short     : None
+Remarks   : 
+___________
+Name      : Dots
+Short     : Dots
+Remarks   : 
+___________
+Name      : Rectangles
+Short     : Rectangles
+Remarks   : 
+___________
+Name      : Diamonds
+Short     : Diamonds
+Remarks   : 
+___________
+Name      : Asterisk
+Short     : Asterisk
+Remarks   : 
+___________
+Name      : DownTriangles
+Short     : Down Triangles
+Remarks   : 
+___________
+Name      : UpTriangles
+Short     : Up Triangles
+Remarks   : 
+___________
+Name      : LeftTriangles
+Short     : Left Triangles
+Remarks   : 
+___________
+Name      : RightTriangles
+Short     : Right Triangles
+Remarks   : 
+_____________________________________
+Enum      : Crosshair
+Constants : 3
+Short     : Cursor cross hair
+Remarks   : 
+___________
+Name      : XY
+Short     : Crosshair. The cursor has two lines: one parallel with X axis and the other parallel with Y axis.
+Remarks   : 
+___________
+Name      : X
+Short     : X hairline only. The cursor has one line parallel with X axis.
+Remarks   : 
+___________
+Name      : Y
+Short     : Y hairline only. The cursor has one line parallel with Y axis.
+Remarks   : 
+_____________________________________
+Enum      : CursorMode
+Constants : 3
+Short     : Cursor mode constants
+Remarks   : 
+___________
+Name      : Fixed
+Short     : Fixed
+Remarks   : 
+___________
+Name      : Floating
+Short     : Floating
+Remarks   : 
+___________
+Name      : Snap
+Short     : Snapped to currently selected element
+Remarks   : 
+_____________________________________
+Enum      : TrackModeState
+Constants : 9
+Short     : Tracking Mode constants.
+Remarks   : 
+___________
+Name      : None
+Short     : None
+Remarks   : 
+___________
+Name      : TrackCursor
+Short     : Track cursor position (Hold left mouse button pressed).
+Remarks   : 
+___________
+Name      : TrackElement
+Short     : Track element position. When the mouse is dragged having left button down, the coordinates of the <STRONG>closest</STRONG> point are displayed in a tooltip.
+Remarks   : 
+___________
+Name      : Zoom
+Short     : Zoom XY. Drag the mouse to define a rectangle for zoom. When left mouse button is released, the area enclosed in rectangle becomes the new plot area (zoom <B>in</B>).<P>To revert back just right click the mouse.
+Remarks   : 
+___________
+Name      : ZoomX
+Short     : Zoom X. Drag the mouse to define a rectangle for zoom. When left mouse button is released, the area within left/right rectangle boundaries becomes the new plot area (zoom in on X <B>only</B> ).<P>To revert back just right click the mouse.
+Remarks   : 
+___________
+Name      : ZoomY
+Short     : Zoom Y. Drag the mouse to define a rectangle for zoom. When left mouse button is released, the area within top/bottom rectangle boundaries becomes the new plot area (zoom in on Y <B>only</B> ). <P>To revert back just right click the mouse.
+Remarks   : 
+___________
+Name      : PanXY
+Short     : Pan XY. The whole plot area moves with the mouse while dragging. <P>To revert back just right click the mouse.
+Remarks   : 
+___________
+Name      : PanX
+Short     : Pan X. The whole plot area moves on X axis with the mouse while dragging. <P>To revert back just right click the mouse.
+Remarks   : 
+___________
+Name      : PanY
+Short     : Pan Y. The whole plot area moves on Y axis with the mouse while dragging. <P>To revert back just right click the mouse.
+Remarks   : 
+_____________________________________
+Enum      : FrameStyle
+Constants : 3
+Short     : Frame style constants
+Remarks   : 
+___________
+Name      : Flat
+Short     : Flat
+Remarks   : 
+___________
+Name      : Scope
+Short     : Raised frame and sunken plot area borders.
+Remarks   : 
+___________
+Name      : Bitmap
+Short     : A 3D bitmap frame picture
+Remarks   : 
+_____________________________________
+Enum      : Orientation
+Constants : 2
+Short     : Axis orientation
+Remarks   : 
+___________
+Name      : HorizontalX
+Short     : Horizontal X axis.
+Remarks   : 
+___________
+Name      : VerticalY
+Short     : Vertical Y axis.
+Remarks   : 
+_____________________________________
+Structure : LineType
+Short     : Line style constants
+Remarks   : 
+_____________________________________
+Structure : SymbolType
+Short     : Symbol style constants
+Remarks   : 
+_____________________________________
+Structure : Crosshair
+Short     : Cursor cross hair
+Remarks   : 
+_____________________________________
+Structure : CursorMode
+Short     : Cursor mode constants
+Remarks   : 
+_____________________________________
+Structure : TrackModeState
+Short     : Tracking Mode constants
+Remarks   : 
+_____________________________________
+Structure : FrameStyle
+Short     : Frame style constants
+Remarks   : 
+_____________________________________
+Structure : Orientation
+Short     : Axis orientation
+Remarks   : 
+_____________________________________
+CoClass   : DMGraphCtrl
+Short     : DMGraphCtrl Class
+Remarks   : This is the root object in DM Graph hierarchy. A client starts using DM Graph Active X control by creating this COM control.
+ExampleCC : 
+ExampleVB : 
+ExampleCS : 
+ExampleJS : 
+_____________________________________
+CoClass   : ElementPropPage
+Short     : ElementPropPage Class
+Remarks   : 
+ExampleCC : 
+ExampleVB : 
+ExampleCS : 
+ExampleJS : 
+_____________________________________
+CoClass   : AnnoPropPage
+Short     : AnnoPropPage Class
+Remarks   : 
+ExampleCC : 
+ExampleVB : 
+ExampleCS : 
+ExampleJS : 
+_____________________________________
+CoClass   : CursorPropPage
+Short     : CursorPropPage Class
+Remarks   : 
+ExampleCC : 
+ExampleVB : 
+ExampleCS : 
+ExampleJS : 
+_____________________________________
+CoClass   : FormatPropPage
+Short     : FormatPropPage Class
+Remarks   : 
+ExampleCC : 
+ExampleVB : 
+ExampleCS : 
+ExampleJS : 
+_____________________________________
+CoClass   : DMGraphPropPage
+Short     : DMGraphPropPage Class
+Remarks   : 
+ExampleCC : 
+ExampleVB : 
+ExampleCS : 
+ExampleJS : 

@@ -1,0 +1,316 @@
+<HTML><HEAD>
+<TITLE>DMGraphLib Component</TITLE>
+<META content="text/html; charset=windows-1252" http-equiv=Content-Type></HEAD>
+<BODY id=bodyID class=dtBODY>
+<SCRIPT src="start.js"></SCRIPT>
+
+<SCRIPT src="link.js"></SCRIPT>
+
+<div id="nsbanner">
+<div id="bannerrow1">
+<TABLE CLASS="bannerparthead" CELLSPACING=0>
+<TR ID="hdr">
+<TD CLASS="runninghead" nowrap>DMGraph ActiveX Control</TD>
+<TD CLASS="product" nowrap>&nbsp;</TD>
+</TR>
+</TABLE>
+</div>
+<div id="TitleRow">
+<H1 class="dtH1">2D Graph ActiveX control - Overview</H1>
+</div></div>
+
+<DIV id="nstext" valign="bottom">
+
+<p>Quite often developers need to plot various data. They 
+expect&nbsp;to use a light control with minimal dependencies. <a 
+href="http://www.codeproject.com/KB/miscctrl/ntgraph_activex.aspx" target=_blank>NTGraph</a> control is a powerful ActiveX control which 
+plots multiple data sets. Unfortunately it depends on MFC libraries.</p>
+<p>This new 2D Graph ActiveX control, named DMGraph, is 
+based on NTGraph drawing engine but eliminates the MFC dependency. For DMGraph 
+the&nbsp;ATL 3.0 was used as framework. The only dependencies are some MS 
+Windows DLLs (C run time library msvcrt.dll is part of OS starting with Windows 
+2000). This means there are no deployment issues - DMGraph works on Windows 2000 
+or later.</p>
+<p>Another major change compared with old 
+NTGraphCtrl&nbsp;is the exposed COM interface architecture.&nbsp;Instead of putting 
+everything together under one interface, DMGraphCtrl exposes a hierarchy of 
+interfaces which represents entities used on drawing. The main interface 
+<a href="interfaces\IDMGraphCtrl\index.htm">IDMGraphCtrl</a> contains collections of items (managed by <a href="interfaces\IDMGraphCollection\index.htm">IDMGraphCollection</a> 
+interface). This collection interface exposes the usual methods (such as <a href="interfaces\IDMGraphCollection\Add.htm">Add</a>, 
+<a href="interfaces\IDMGraphCollection\Delete.htm">Delete</a>, <a href="interfaces\IDMGraphCollection\Count.htm">Count</a>, <a href="interfaces\IDMGraphCollection\Item.htm">Item</a>). What is specific is the concept of "selected item". One 
+item in collection can be the "selected" one. Sometimes user operations (such as 
+mouse drag) apply to the "selected" item (if any). 
+<a href="interfaces\IDMGraphCollection\Selected.htm">IDMGraphCollection::Selected</a> property gets/sets the index of selected item.</p>
+<p>When user double clicks the graph area, a modal dialog 
+with property pages is displayed. This dialog may be invoked programmatically as 
+well using <a href="interfaces\IDMGraphCtrl\ShowProperties.htm">ShowProperties</a> method. Modifying data in these property pages has an 
+immediate effect on displayed graph.</p>
+<p>The CDMGraphCtrl class implements <a href="interfaces\IDMGraphCtrl\index.htm">IDMGraphCtrl</a> 
+interface. At run time some properties can be viewed or changed using DM Graph 
+property page:</p>
+<p><IMG alt="" src="img/PropDmGraph.PNG" ></p>
+<p>CDMGraphCtrl&nbsp;&nbsp;and keeps the following 
+collections exposed by IDMGraphCtrl interface:</p>
+<h3>1. Element collection</h3>
+<p>The <a href="interfaces\IDMGraphCtrl\Elements.htm">get_Elements</a> property exposes elements 
+collection.</p>
+<p>Each item is an instance of&nbsp;CGraphElement class 
+which exposes <a href="interfaces\IDMGraphElement\index.htm">IDMGraphElement</a> interface. A graph element is a collection of 
+points which need to be plotted. The graph element has various properties which 
+define&nbsp;its drawing style. For example <a href="interfaces\IDMGraphElement\LineType.htm">Linetype</a> property defines what kind 
+of line should be used to connect the points (including "Null" - no lines at 
+all). Color, width, shape can be set for points; the entire set of points can be 
+enabled/disabled for drawing etc. Each graph element is identified by a "name". 
+All these are accessible through COM properties exposed by IDMGraphElement 
+interface. When such property is set the entire graph is re-drawn to reflect the 
+changes.</p>
+<p>The set of points (data to be plotted) is supplied by 
+client using several methods: </p>
+<ul>
+  <li><a href="interfaces\IDMGraphElement\Plot.htm">Plot</a> - two one-dimensional arrays with same 
+  size&nbsp;(one for X other for Y) will set the entire point collection for a 
+  specific graph element 
+  <li><a href="interfaces\IDMGraphElement\PlotXY.htm">PlotXY</a> - appends just one point to the point 
+  collection. (both X and Y coordinates are specified) 
+  <li><a href="interfaces\IDMGraphElement\PlotY.htm">PlotY</a> appends just one point to the point collection. 
+  (only Y is specified, the X is the index of added point in the points 
+  collection)</li></ul>
+<p>Each time the point collection is modified the graph is 
+updated to reflect the changes but the range is not updated. If the new point(s) 
+go(es) out of range then <a href="interfaces\IDMGraphCtrl\SetRange.htm">SetRange</a> or <a href="interfaces\IDMGraphCtrl\Autorange.htm">AutoRange</a> methods need to be called.</p>
+<p>New elements can be added to collection, existing ones 
+removed, selected element index&nbsp;can be changed and selected element 
+properties can be viewed/changed from Elements property page.</p>
+<p><IMG id=IMG1 alt="" src="img/PropElement.PNG" ></p>
+<h3>2. Annotation collection</h3>
+<p>The <a href="interfaces\IDMGraphCtrl\Annotations.htm">get_Annotations</a> property exposes&nbsp;annotations 
+collection.</p>
+<p>One annotation is a piece of text which is displayed on 
+a specific position on the graph. This collection keeps instances of 
+CGraphAnnotation classes which exposes <a href="interfaces\IDMGraphAnnotation\index.htm">IDMGraphAnnotation</a> interface. Using this 
+interface various properties can be accessed such as: caption (the displayed 
+text), position, color, text orientation, background enable/disable. When such 
+property is set the entire graph is re-drawn to reflect the changes.</p>
+<p>New&nbsp;annotations can be added to collection, 
+existing ones removed, selected annotation index can be changed and selected 
+annotation properties can be viewed/changed from Annotations property page.</p>
+<p><IMG alt="" src="img/PropAnno.PNG" ></p>
+<h3>3. Cursor collection</h3>
+<p>The <a href="interfaces\IDMGraphCtrl\Cursors.htm">get_Cursors</a> property exposes&nbsp;cursors 
+collection.</p>
+<p>A cursor is made of&nbsp;one or two lines which are 
+parallel with X or Y axis. <a href="interfaces\IDMGraphCursor\index.htm">IDMGraphCursor</a> interface deals with cursor specific 
+properties. If <a href="interfaces\IDMGraphCursor\Style.htm">Style</a> property (type is Crosshair enum) is set to "XY" then the 
+cursor will have two lines: one parallel with X axis and the other parallel with 
+Y axis. If cursor <a href="interfaces\IDMGraphCursor\Mode.htm">Mode</a> is set to Snap then the selected cursor will snap to the 
+closest point of selected graph element during mouse drag.</p>
+<p>New&nbsp;cursors can be added to collection, existing 
+ones removed, selected cursor index can be changed and selected cursor 
+properties can be viewed/changed from Cursors property page.</p>
+<p><IMG alt="" src="img/PropCursor.PNG" ></p>
+<h3>4. Axis objects</h3>
+<p>Two objects are exposed by <a href="interfaces\IDMGraphCtrl\Axis.htm">get_Axis</a> property: one for X 
+(horizontal) axis and other for Y (vertical) axis. The objects are instances of 
+CGraphAxis class which exposes <a href="interfaces\IDMGraphAxis\index.htm">IDMGraphAxis</a> interface. Various properties can be 
+get/set for each axis. If <a href="interfaces\IDMGraphAxis\Time.htm">put_Time property</a> is set to VARIANT_TRUE then the 
+double values for that axis are considered to be date/time values. These values 
+are interpreted like in DATE type (used in OLE Automation VARIANT union). The 
+values are displayed according to format string set by <a href="interfaces\IDMGraphAxis\Format.htm">Format</a> property. For 
+date/time possible format strings&nbsp;are documented in <strong>strftime</strong> function in MSDN. Otherwise, for non 
+logarithmic axis, the usual <strong>sprintf</strong> format 
+strings are accepted. Some axis properties are available in DM Graph property 
+sheet (see above) while others are available in Format property page (see 
+below).</p>
+<p><IMG alt="" src="img/PropFormat.PNG" ></p>
+<p>From Axis combo box the X (bottom) or Y (left) axis can 
+be selected. Then the data type can be set for selected axis. For each type 
+the Templates list box is filled with available format templates. When a 
+template item is selected from the left, the Format string on right is 
+updated.</p>
+<h2>Basic usage</h2>
+<h3>1. From a Windows client written in C++ with ATL</h3><PRE class=syntax><SPAN class=lang>[C/C++]</SPAN><code>
+class CMainWnd : public CWindowImpl&lt;CMainWnd&gt; { 
+     CAxWindow*                 m_pGraphCtrl; 
+     CComPtr&lt;IDMGraphCtrl&gt;      m_spDMGraph; 
+}; 
+
+LRESULT CMainWnd::OnCreate(UINT uMsg, WPARAM wParam, LPARAM lParam, BOOL&amp; bHandled)  
+{ 
+     m_pGraphCtrl = new CAxWindow(m_hWnd); 
+     if(m_pGraphCtrl == NULL) 
+           return -1; 
+     if(!AtlAxWinInit()) 
+           return -1; 
+     HRESULT hr; 
+     CComPtr&lt;IAxWinHostWindow&gt; spHost; 
+     hr = m_pGraphCtrl-&gt;QueryHost(IID_IAxWinHostWindow, (void**)&amp;spHost); 
+     if(FAILED(hr)) 
+     { 
+         Message(hr, NULL, L"Cannot query Ax host"); 
+         return -1; 
+     } 
+     hr = spHost-&gt;CreateControl(L"DMGraph.DMGraphCtrl", m_pGraphCtrl-&gt;m_hWnd, NULL); 
+     if(FAILED(hr)) 
+     { 
+         Message(hr, NULL, L"Cannot start DM Graph control"); 
+         return -1; 
+     } 
+
+     CComVariant vData; 
+     hr = m_pGraphCtrl-&gt;QueryControl(IID_IDMGraphCtrl, (void**)&amp;m_spDMGraph); 
+     if(FAILED(hr) || m_spDMGraph == NULL) 
+     { 
+         Message(hr, NULL, L"Cannot query DM Graph control"); 
+         return -1; 
+     } 
+     return 0; 
+}  
+ 
+void CMainWnd::SetGraphData(VARIANT* pvarrX, VARIANT* pvarrY, LPCTSTR szName)
+{ 
+  ATLASSERT(pvarrX); 
+  ATLASSERT(pvarrY); 
+  ATLASSERT(szName); 
+  CComBSTR bsName(szName); 
+  CComPtr&lt;IDMGraphCollection&gt; spElements; 
+  CComPtr&lt;IDMGraphElement&gt; spGraphElement; 
+  HRESULT hr = m_spDMGraph-&gt;get_Elements(&amp;spElements); 
+  long i, nElementCount = 0; 
+  BOOL bReplace = FALSE; 
+  hr = spElements-&gt;get_Count(&amp;nElementCount); 
+  for(i=0; i&lt;nElementCount; i++) 
+  { 
+     CComBSTR bsElemName; 
+     CComPtr&lt;IDispatch&gt; spDispatch; 
+     
+     hr = spElements-&gt;get_Item(i, &amp;spDispatch); 
+
+     hr = spDispatch.QueryInterface(&amp;spGraphElement); 
+
+     spGraphElement-&gt;get_Name(&amp;bsElemName); 
+     if(_wcsicmp(bsElemName, bsName) == 0) 
+    { 
+         OLECHAR szMsgText[256]; 
+        _snwprintf(szMsgText, 256, L"There is ALREADY an element named '%s'.\nDo you want to replace it ?", bsElemName); 
+         if(::MessageBoxW(m_hWnd, szMsgText, NULL, MB_YESNO|MB_ICONQUESTION) != IDYES) 
+              return; 
+         bReplace = TRUE; 
+         break; 
+    } 
+    else 
+         spGraphElement = NULL; 
+  } 
+  if(bReplace == FALSE || spGraphElement == NULL) 
+  { 
+     CComPtr&lt;IDispatch&gt;     spDispatch; 
+     hr = spElements-&gt;Add(&amp;spDispatch); 
+     spGraphElement = NULL; 
+     hr = spDispatch.QueryInterface(&amp;spGraphElement); 
+
+  } 
+  hr = spGraphElement-&gt;put_Name(bsName); 
+  hr = spGraphElement-&gt;put_PointSymbol( Dots ); 
+  hr = spGraphElement-&gt;put_PointSize(3); 
+  hr = spGraphElement-&gt;Plot(*pvarrX, *pvarrY); 
+  if(FAILED(hr)) 
+  { 
+     Message(hr, spGraphElement, L"Failed to plot items");
+     return; 
+  } 
+  hr = m_spDMGraph-&gt;AutoRange(); 
+} 
+</code></PRE>
+<h3>2. From an HTML page using VBScript</h3>
+<p>Inside&nbsp;Html body the ActiveX is created using 
+object tag. A button click will execute a script to set the data to be 
+plotted.</p><PRE class=syntax><SPAN class=lang>[VB Script]</SPAN><code>
+&lt;object ID="DMGraphCtrl" CLASSID="CLSID:AAF89A51-7FC0-43B0-9F81-FFEFF6A8DB43" width=600 height=400 VIEWASTEXT&gt;&lt;/object&gt;
+&lt;input id=BtnSin value=sin type="button"&gt;
+&lt;script id=clientEventHandlersVBS language=vbscript&gt;
+&lt;!--
+Sub BtnSin_onclick
+  On Error Resume Next
+  Dim dmGraphCtrl
+  Set dmGraphCtrl = document.getElementById("DMGraphCtrl")
+  Dim idx : idx = dmGraphCtrl.Elements.Selected
+  If idx &lt; 0 Then
+    MsgBox("Error: please create and select an element first." &amp; vbCrLf &amp; "(Double click to see property pages)")
+  Else
+    Dim selElement
+    Set selElement = dmGraphCtrl.Elements.Item(idx)
+    Dim i
+    Dim x()
+    Dim y()
+    ReDim x(100)
+    ReDim y(100)
+    For i=0 To 100
+      x(i) = i/5
+      y(i) = Sin( x(i) )
+    Next
+    selElement.Plot x, y
+    dmGraphCtrl.AutoRange()
+  End If
+  If Err.number &lt;&gt; 0 Then
+    MsgBox Err.Description
+  End If
+End Sub
+--&gt;
+&lt;/script&gt;
+</code></PRE>
+<p></p>
+
+<h3>3. From a Windows client written in C++ with MFC</h3>
+<PRE class=syntax><SPAN class=lang>[C/C++]</SPAN><code>
+#import "..\DMGraph\DMGraph.tlb" no_namespace raw_interfaces_only
+
+class CDmGraphMfcClientDlg : public CDialog
+{
+    ... ... ...
+
+    IDMGraphCtrlPtr m_spGraph;
+};
+
+BOOL CDmGraphMfcClientDlg::OnInitDialog()
+{
+    ... ... ...
+
+    CWnd* pwndCtrl = GetDlgItem(IDC_DMGRAPHCTRL1);
+    ASSERT_VALID(pwndCtrl);
+    IUnknown* pUnkCtrl = pwndCtrl->GetControlUnknown(); //weak reference
+
+    HRESULT hr;
+    m_spGraph = pUnkCtrl;
+    IDMGraphCollectionPtr colElements;
+	
+    hr = m_spGraph->get_Elements(&colElements);
+
+    IDispatchPtr spDisp;
+    IDMGraphElementPtr spElem;
+    hr = colElements->Add(&spDisp);
+    spElem = spDisp;
+    hr = spElem->put_Name(_bstr_t("sin"));
+    hr = spElem->put_PointSymbol( Dots );
+    hr = spElem->put_PointSize(1);
+    hr = spElem->put_PointColor( RGB(255, 0, 0) );
+	
+    COleSafeArray arrx, arry;
+    arrx.CreateOneDim(VT_R8, 100);
+    arry.CreateOneDim(VT_R8, 100);
+    long i;
+    for(i=0; i<100; i++)
+    {
+        double x, y;
+        x = i/10.;
+        y = sin(x);
+
+        arrx.PutElement(&i, &x);
+        arry.PutElement(&i, &y);
+    }
+
+    hr = spElem->Plot(COleVariant(arrx), COleVariant(arry));
+    hr = m_spGraph->AutoRange();
+
+    return TRUE;  // return TRUE  unless you set the focus to a control
+}
+</code></PRE>
+</DIV></BODY></HTML>
